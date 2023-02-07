@@ -1,17 +1,32 @@
 @import "../../node_modules//bootstrap//scss/bootstrap.scss";
 
-$blue: green;
+$primary-font-color: #000000;
+$secondary-font-color:#ffffff;
 
-h1 {
-color: $blue;
+
+body {
+background-image: url("/images/pexels-dids-1499511.jpg");
+background-size: 100%;
+
 }
 
+
+
+//$background-img-seize:
+
+
+
+
 .container1 {
+
     width: 30%;
     height: auto;
     margin: 0 auto;
-    margin-top: 10%;
-  
+    margin-top: 15%;
+    border: 1px solid black;
+    padding: 6rem;
+    background-color:rgba(240,239,237,255);
+    border-radius: 1rem;
+    border-color: #904131;
 
   }
-  

@@ -159,6 +159,7 @@
     "websocket-extensions": "^0.1.4"
   },
   "devDependencies": {
+    "jsdoc": "^4.0.0",
     "live-server": "^1.2.2",
     "sass": "^1.58.0"
   },
