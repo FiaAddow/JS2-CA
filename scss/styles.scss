@@ -1,0 +1,57 @@
+@import "../../node_modules//bootstrap//scss/bootstrap.scss";
+
+$primary-font-color: #000000;
+$secondary-font-color:#ffffff;
+
+
+body {
+background-image: url("/images/pexels-dids-1499511.jpg");
+background-size: 100%;
+
+}
+
+
+
+//$background-img-seize:
+
+
+
+
+.container1 {
+
+    width: 30%;
+    height: auto;
+    margin: 0 auto;
+    margin-top: 15%;
+    border: 1px solid black;
+    padding: 6rem;
+    background-color:rgba(240,239,237,255);
+    border-radius: 1rem;
+    border-color: #904131;
+
+  }
+
+  //register styling
+  .gradient-custom {
+    /* fallback for old browsers */
+    background: #f093fb;
+    
+   
+    
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: linear-gradient(to bottom right, rgba(240, 147, 251, 1), rgba(245, 87, 108, 1))
+    }
+    
+    .card-registration .select-input.form-control[readonly]:not([disabled]) {
+    font-size: 1rem;
+    line-height: 2.15;
+    padding-left: .75em;
+    padding-right: .75em;
+    }
+    .card-registration .select-arrow {
+    top: 13px;
+    }
+
+    .btn btn-primary me-3 {
+      background-color: #8064A2;
+  }
