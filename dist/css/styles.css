@@ -10769,15 +10769,21 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
-h1, .h1 {
-  color: green;
+body {
+  background-image: url("/images/pexels-dids-1499511.jpg");
+  background-size: 100%;
 }
 
 .container1 {
   width: 30%;
   height: auto;
   margin: 0 auto;
-  margin-top: 10%;
+  margin-top: 15%;
+  border: 1px solid black;
+  padding: 6rem;
+  background-color: rgb(240, 239, 237);
+  border-radius: 1rem;
+  border-color: #904131;
 }
 
 /*# sourceMappingURL=styles.css.map */
