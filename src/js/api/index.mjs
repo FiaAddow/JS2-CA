@@ -2,5 +2,5 @@
 
 console.log(constants.API_SOCIAL_URL);*/
 
-import { registerFormListener } from "./Handlers/Register.mjs";
+import { registerFormListener } from "./handlers/register.mjs";
 registerFormListener()
