@@ -5,9 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/dist/css/styles.css">
     <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js" defer></script>
-    <script src="/src/js/api/Handlers/Register.mjs" defer type="module"></script>
+    <script src="/src/js/api/handlers/Register.mjs" defer type="module"></script>
     <script src="/src/js/api/index.mjs" defer type="project"></script>
-    <title>Rigster</title>
+    <script src="/src/js/api/constants.mjs" defer type="project"></script>
+    <title>Register</title>
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -26,76 +27,69 @@
           <div class="collapse navbar-collapse">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a href="signin.html">
+                <a href="/Profile/login.html">
                   <img class="mb-4" src="/images/2.png" alt="Register-page" width="100" height="100">
                 </a>
               </li>
             </ul>
-      
             <div class="d-flex align-items-center">
-              <a href="signin.html">
-              <button type="button" class="btn btn-link px-3 me-2">Login</button>
+              <a href="/Profile/signin.html">
+                <button type="button" class="w-40 btn btn-btn">Login</button>
             </a>
-              <a href="Register.html">
-              <button type="button" class="w-40 btn btn-outline-dark btn-rounded" data-mdb-ripple-color="dark">Sign up for free</button>
-              </a>
+            <a href="/Profile/register.html">
+                <button type="button" class="w-40 btn btn-outline-dark btn-rounded" data-mdb-ripple-color="dark">Sign up for free</button>
+                </a>
             </div>
           </div>
         </div>
       </nav>
     <main>
-        <section class="vh-100 bg-image" style="
-          background-image: url('https://mdbcdn.b-cdn.net/img/Photos/new-templates/search-box/img4.webp');
-        ">
+        <section class="vh-100 bg-image" style="background-image: url(#);">
             <div class="mask d-flex align-items-center h-100 gradient-custom-3">
                 <div class="container h-100">
                     <div class="row d-flex justify-content-center align-items-center h-100">
                         <div class="col-12 col-md-9 col-lg-7 col-xl-6">
                             <div class="card" style="border-radius: 15px">
                                 <div class="card-body p-5">
-                                    <h2 class="text-uppercase text-center mb-5">
-                                        Create an account
-                                    </h2>
-                                    <form>
-                                        <div class="form-outline mb-4">
-                                            <input type="text" name="name" class="form-control form-control-lg"
-                                                required="" pattern="^[\w]+$">
-                                            <label class="form-label" for="form3Example1cg">Your Name</label>
+                                   
+                                    <h2 class="text-uppercase text-center mb-5">Create an account</h2>
+                                    <form id="registerForm" method="post" action="/auth/register">
+                                        <div class="form-group mb-4">
+                                            <input type="text" name="name" class="form-control" required pattern="^[\w]+$" title="user name must only contain lowercase, uppercase, letters and username!">
+                                            <label class="" for="Name">Your Name</label>
                                         </div>
-                                        <div class="form-outline mb-4">
-                                            <input type="email" name="email" class="form-control form-control-lg"
-                                                required="" pattern="^[\w\-.]+@(stud.)?noroff.no$">
-                                            <label class="form-label" for="form3Example3cg">Your Email</label>
+    
+                                        <div class="form-group">
+                                            <label for="emailInput">Email address</label>
+                                            <input type="email" class="form-control" id="emailInput" name="email" aria-describedby="emailHelp" placeholder="Enter email">
+                                            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                                          </div>
+
+                                        <div class="form-group mb-4">
+                                            <input type="password" name="password" class="form-control"
+                                                required minLength="8">
+                                            <label for="">Password</label>
                                         </div>
 
-                                        <div class="form-outline mb-4">
-                                            <input type="password" name="password" class="form-control form-control-lg"
-                                                required="" pattern="minLength: 8">
-                                            <label class="form-label" for="form3Example4cg">Password</label>
-                                        </div>
-                                        <div class="form-outline mb-4">
-                                            <input type="url" name="banner" class="form-control form-control-lg"> Banner
+                                        <div class="form-group mb-4">
+                                            <input type="url" name="banner" class="form-control"> Banner
                                             (Optional)
                                         </div>
-                                        <div class="form-outline mb-4">
-                                            <input type="url" name="avatar" class="form-control form-control-lg"> Avatar
+                                        <div class="form-group mb-4">
+                                            <input type="url" name="avatar" class="form-control"> Avatar
                                             (Optional)
                                         </div>
 
                                         <div class="form-check d-flex justify-content-center mb-5">
-                                            <input class="form-check-input me-2" type="checkbox" value=""
-                                                id="form2Example3cg">
-                                            <label class="form-check-label" for="form2Example3g">
+                                            <input class="form-check-input me-2" type="checkbox">
+                                            <label class="form-check-label" for="">
                                                 I agree all statements in
                                                 <a href="#!" class="text-body"><u>Terms of service</u></a>
                                             </label>
                                         </div>
 
                                         <div class="d-flex justify-content-center">
-                                            <button type="button"
-                                                class="btn btn-success btn-block btn-lg gradient-custom-4 text-body">
-                                                Register
-                                            </button>
+                                            <button class="btn btn-success btn-block btn-lg gradient-custom-4 text-body">Register</button>
                                         </div>
 
                                         <p class="text-center text-muted mt-5 mb-0">

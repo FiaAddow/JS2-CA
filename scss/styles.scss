@@ -1,9 +1,24 @@
 @import "../../node_modules//bootstrap//scss/bootstrap.scss";
 
+$blue: blue;
+
+.test{
+  display: block;
+
+  &-button {
+    background-color: aqua;
+  }
+}
+
+h1{
+  color: red;
+}
+
+/*
 $primary-font-color: #000000;
 $secondary-font-color:#ffffff;
 
-
+ 
 body {
 background-image: url("/images/pexels-dids-1499511.jpg");
 background-size: 100%;
@@ -33,12 +48,12 @@ background-size: 100%;
 
   //register styling
   .gradient-custom {
-    /* fallback for old browsers */
+    fallback for old browsers 
     background: #f093fb;
     
    
     
-    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ 
     background: linear-gradient(to bottom right, rgba(240, 147, 251, 1), rgba(245, 87, 108, 1))
     }
     
