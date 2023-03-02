@@ -10,7 +10,7 @@ form.addEventListener ("submit", (event) => {
 
 
 
-//export function setRegisterFormListener () {}----I CANT EXPORT THIS FUNCTION-alt skal ligge inne  denne funksjonen.
+export function setRegisterFormListener () {
   const form = document.querySelector("#registerForm");
 
   form.addEventListener("submit", (event) => {
@@ -20,3 +20,4 @@ form.addEventListener ("submit", (event) => {
     console.log('it works')
   })
 
+}

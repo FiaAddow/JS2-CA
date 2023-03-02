@@ -169,6 +169,11 @@
     "build": "sass src/scss:dist/css",
     "watch": "sass --watch src/scss:dist/css & live-server"
   },
+  
+  "engines": {
+    "node": "16.x",
+    "npm": "7"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/FiaAddow/JS2-CA.git"
@@ -180,4 +185,5 @@
     "url": "https://github.com/FiaAddow/JS2-CA/issues"
   },
   "homepage": "https://github.com/FiaAddow/JS2-CA#readme"
+  
 }
