@@ -8,7 +8,7 @@
     <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js" defer></script>
     <script src="/src/js/api/index.mjs" defer type="project"></script>
     <script src="/src/js/api/constants.mjs" defer type="project"></script>
-    <title>login</title>
+    <title>signin-page</title>
 </head>
 
     <body>
@@ -29,7 +29,7 @@
     <div class="collapse navbar-collapse">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <a href="/Profile/login.html">
+          <a href="/Profile/index-page.html">
             <img class="mb-4" src="/images/2.png" alt="login-page" width="100" height="100">
           </a>
         </li>
@@ -47,23 +47,21 @@
   </div>
 </nav>
       <main>
-    <div class="container1">
-        <div class="text-center"> 
-        <main class="form-signin w-100 m-auto">
-          <form>
-            <a href="/Profile/signin.html">
-              <img class="mb-4" src="/images/2.png" alt="signin-page" width="100" height="100">
-            </a>
-            <h1 class="h3 mb-3 fw-normal">Please sign in</h1>
-            <div class="form-floating">
-              <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
-              <label for="floatingInput">Email address</label>
+        <div class="container1 text-center">
+        <form id="registerForm">
+          <a href="/Profile/index-page.html">
+            <img class="mb-4" src="/images/2.png" alt="signin-page" width="100" height="100">
+          </a>
+          <h1 class="h3 mb-3 fw-normal">Please sign in</h1>
+          <div class="form-group mb-4">
+              <label for="emailInput">Email address</label>
+              <input type="email" class="form-control" id="emailInput" name="email" aria-describedby="emailHelp" placeholder="@stud.noroff.no">
+              <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
             </div>
-            <div class="form-floating">
-              <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
-              <label for="floatingPassword">Password</label>
+            <div class="form-group mb-4">
+              <input type="password" name="password" class="form-control" required minLength="8" placeholder="********">
+              <label for="">Password</label>
             </div>
-        
             <div class="checkbox mb-3">
               <label>
                 <input type="checkbox" value="remember-me"> Remember me
@@ -74,9 +72,9 @@
             <button type="button" class="w-40 btn btn-outline-dark btn-rounded" data-mdb-ripple-color="dark">Register</button>
           </a>
             <p class="mt-5 mb-3 text-muted">©2023</p>
-          </form>
-        </div>
-    </div>
+          </div>
+          </div>
+        </form>
         </main>
        
  
@@ -92,24 +90,5 @@
     </ul>
   </footer>
 </body>
-
-
-  
-    
-  
-
-
-
-
-
-
-    
-
-
-    <script src="/docs/5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
-
-      
-  
-
 
 </html>
