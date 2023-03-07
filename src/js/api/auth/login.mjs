@@ -21,6 +21,9 @@ export async function login(profile) {
   Storage.save("token", accessToken)
 
   Storage. save("profile", user)
+  
+  alert("You are logged in")
+
 }
- 
+
 //const token = localStorage.setItem("token");
