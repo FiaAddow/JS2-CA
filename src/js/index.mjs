@@ -1,7 +1,7 @@
 import { setRegisterFormListener} from "./Handlers/Register.mjs";
 import { setLoginFormListener} from "./Handlers/login.mjs";
 
-setRegisterFormListener()
+
 
 const path = location.pathname;
 
