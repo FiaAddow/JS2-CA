@@ -7,9 +7,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="/dist/css/styles.css">
   <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js" defer></script>
-  <script src="/src/js/api/index.mjs" type="module" defer></script>
-  <script src="/src/js/handlers/login.mjs"  type="module" defer></script>
-  <script src="/src/js/api/constants.mjs"  type="module" defer></script>
+  <script src="/src/js/Handlers/login.mjs" type="module" defer></script>
+
   <title>login-page</title>
 </head>
 
@@ -44,7 +43,7 @@
   </nav>
   <main>
     <div class="text-center">
-      <form id="loginForm" >
+      <form id="loginForm">
         <a href="/Profile/index-page.html">
           <img class="mb-4" src="/images/2.png" alt="signin-page" width="100" height="100">
         </a>
@@ -52,11 +51,11 @@
         <div class="form-group mb-4">
           <label for="emailInput">Email address</label>
           <input type="email" class="form-control" id="emailInput" name="email" aria-describedby="emailHelp"
-            placeholder="@stud.noroff.no" value="farhia@stud.noroff.no">
+            placeholder="@stud.noroff.no" value="amin@stud.noroff.no">
           <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
         </div>
         <div class="form-group mb-4">
-          <input type="password" name="password" class="form-control" required minLength="8" placeholder="********" value="ghjghjvhgjfvhgjhjfj">
+          <input type="password" name="password" class="form-control" required minLength="8" placeholder="********" value="adminadmin">
           <label for="">Password</label>
         </div>
         <div class="checkbox mb-3">

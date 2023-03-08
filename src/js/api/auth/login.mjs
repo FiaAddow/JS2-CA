@@ -9,12 +9,12 @@ export async function login(profile) {
 
   const response = await fetch(loginURL, {
     headers: {
-      "Content-Type": "application/json"
+      "Content-Type": "application/json",
     },
     method,
-    body
+    body,
   });
-  
+
   const results = await response.json();
   console.log(results);
 }
