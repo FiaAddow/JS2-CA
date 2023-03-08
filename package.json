@@ -186,6 +186,8 @@
     "npm": "8.19.3"
 },
 
+"type": "module",
+
 
   "homepage": "https://github.com/FiaAddow/JS2-CA#readme"
   
