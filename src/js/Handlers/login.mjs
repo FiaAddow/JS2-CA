@@ -1,24 +1,19 @@
 import { login } from "../api/auth/Login.mjs";
 
-
 console.log("hiiiii");
 
-
-// function setLoginFormListener() {
-  const form = document.querySelector("#LoginForm");
-
+export function setLoginFormListener() {
+  const form = document.querySelector("#loginForm");
   console.log(form);
+  form.addEventListener("submit", (event) => {
+    event.preventDefault();
+    const form = event.target;
+    const formData = new FormData(form);
 
-    form.addEventListener("submit", (event) => {
-      event.preventDefault()
-      const form = event.target;
-      const formData = new FormData(form);
+    console.log(formData);
+    const profile = Object.fromEntries(formData.entries());
 
-      console.log(form);
-      const profile = Object.fromEntries(formData.entries())
-      
-      //send to API
-     login(profile)
-    })
- 
-// }
+    //send to API
+    login(profile);
+  });
+}
