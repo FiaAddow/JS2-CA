@@ -2,18 +2,20 @@ import { API_SOCIAL_URL } from "../constants.mjs";
 
 import { authfetch } from "../authFetch.mjs";
 
-const method = "/post";
-const action = "/posts";
+const method = "/posts";
+const action = "put";
 
 export async function updatePost(postData) {
-  const updatePostURL = API_SOCIAL_URL + action;
+  if (!postData.id) {
+    throw new Error("update requires as postID");
+  }
+
+  const updatePostURL = `${API_SOCIAL_URL}${action}/${postData.id}`;
 
   const response = await authfetch(updatePostURL, {
     method,
     body: JSON.stringify(postData),
   });
 
-  const post = await response.json();
-
-  console.log(post);
+  return await response.json();
 }

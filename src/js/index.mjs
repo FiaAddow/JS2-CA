@@ -1,7 +1,9 @@
 import { setRegisterFormListener } from "./Handlers/Register.mjs";
 import { setLoginFormListener } from "./Handlers/login.mjs";
 
-import * as posts from "./api/posts/index.mjs";
+import * as template from "./templets/index.mjs";
+import * as postMethods from "./api/posts/index.mjs";
+import { renderPostTemplate } from "./templets/index.mjs";
 
 const path = location.pathname;
 
@@ -11,7 +13,11 @@ if (path === "/Profile/login.htm") {
   setRegisterFormListener();
 }
 
-createPost({
-  title: "example post",
-  body: "Also an example",
-});
+async function testTemplate() {
+  const posts = await postMethods.getPost();
+  const post = posts(45);
+  const container = document.querySelector("#post");
+  renderPostTemplate(post, container);
+}
+
+testTemplate();
