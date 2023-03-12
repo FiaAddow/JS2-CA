@@ -94,6 +94,7 @@
     "nan": "^2.17.0",
     "nanomatch": "^1.2.13",
     "negotiator": "^0.6.3",
+    "node-modules": "^1.0.1",
     "normalize-path": "^3.0.0",
     "object-assign": "^4.1.1",
     "object-copy": "^0.1.0",

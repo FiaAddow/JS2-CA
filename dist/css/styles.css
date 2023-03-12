@@ -69,7 +69,7 @@
   --bs-border-radius-2xl: 2rem;
   --bs-border-radius-pill: 50rem;
   --bs-link-color: #0d6efd;
-  --bs-link-hover-color: #0a58ca;
+  --bs-link-hover-color: black;
   --bs-code-color: #d63384;
   --bs-highlight-bg: #fff3cd;
 }
@@ -10769,9 +10769,14 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+
 body {
-  background-image: url("/images/pexels-dids-1499511.jpg");
+  background-color: #fff;
   background-size: 100%;
+}
+
+.background-login {
+
 }
 
 .container1 {
