@@ -1,15 +1,15 @@
-import { load } from "../../storage/index.mjs";
+import { load } from "../storage/index.mjs";
 
 export function headers() {
   const token = load("token");
 
   return {
     "content-Type": "application/json",
-    Authorization: `Bearer ${token}`,
+    authorization: `Bearer ${token}`,
   };
 }
 
-export async function authfetch(url, option = ) {
+export async function authfetch(url, option = {}) {
   return fetch(url, {
     ...option,
     headers: headers(),

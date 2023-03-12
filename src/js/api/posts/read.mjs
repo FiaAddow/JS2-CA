@@ -4,8 +4,8 @@ import { authfetch } from "../authFetch.mjs";
 
 const action = "/posts";
 
-export async function getPost() {
-  const updatePostURL = `${API_SOCIAL_URL}${action}/ ${postData.id}`;
+export async function getPosts() {
+  const updatePostURL = `${API_SOCIAL_URL}${action}`;
 
   const response = await authfetch(updatePostURL);
 
@@ -18,9 +18,7 @@ export async function getPost(id) {
   }
   const getPostURL = `${API_SOCIAL_URL}${action}/${id}`;
 
-  const response = await authfetch(getPostURL, {
-    method,
-  });
+  const response = await authfetch(getPostURL);
 
   return await response.json();
 }

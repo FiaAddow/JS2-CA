@@ -1,23 +1,24 @@
-import { setRegisterFormListener } from "./Handlers/Register.mjs";
-import { setLoginFormListener } from "./Handlers/login.mjs";
-
-import * as template from "./templets/index.mjs";
+//import { setRegisterFormListener } from "./handlers/Register.mjs";
+//import { setLoginFormListener } from "./handlers/login.mjs";
+import * as templates from "./templets/index.mjs";
 import * as postMethods from "./api/posts/index.mjs";
-import { renderPostTemplate } from "./templets/index.mjs";
+import { renderPostTemplates } from "./templets/index.mjs";
 
 const path = location.pathname;
+console.log(path);
 
-if (path === "/Profile/login.htm") {
-  setLoginFormListener();
+if (path === "/profile/login.htm") {
+  //setLoginFormListener();
 } else if (path === "/profile/register.html") {
-  setRegisterFormListener();
+  //setRegisterFormListener();
 }
 
 async function testTemplate() {
-  const posts = await postMethods.getPost();
-  const post = posts(45);
-  const container = document.querySelector("#post");
-  renderPostTemplate(post, container);
+  // when this function is called
+  const posts = await postMethods.getPosts();
+  const post = posts[46];
+  const container = document.querySelector("#post"); //get the container frm html file
+  renderPostTemplates(posts, container); //render the post template inside the render.
 }
 
 testTemplate();
