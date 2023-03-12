@@ -1,18 +1,16 @@
-/*const form = document.querySelector("#registerForm");
-
-form.addEventListener ("submit", (event) => {
-    const form = event.target;
-    const formData = new FormData(form);
-    const profile = Object.fromEntries(formData.entries())
-    console.log(profile)
-})*/
- 
+import { register } from "../api/auth/register.mjs";
 
 const form = document.querySelector("#registerForm");
 
+console.log("Register func");
+
 form.addEventListener("submit", (event) => {
   event.preventDefault();
+  const form = event.target;
   const formData = new FormData(form);
-  const profile = Object.fromEntries(Array.from(formData.entries()));
-  console.log(profile);
+  const profile = Object.fromEntries(formData.entries());
+
+  console.log(formData);
+  //send to API
+  register(profile);
 });
