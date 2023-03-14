@@ -3,9 +3,9 @@ import { API_SOCIAL_URL } from "../constants.mjs";
 import { authfetch } from "../authFetch.mjs";
 
 const action = "/posts";
-const method = "/delete";
+const method = "delete";
 
-export async function removePost(id) {
+export async function deletePost(id) {
   if (!id) {
     throw new Error("delete required PostID");
   }
@@ -16,5 +16,7 @@ export async function removePost(id) {
     method,
   });
 
-  return await response.json();
+  const res = await response.json();
+
+  console.log(res);
 }
