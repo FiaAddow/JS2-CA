@@ -179,5 +179,9 @@
   "bugs": {
     "url": "https://github.com/FiaAddow/JS2-CA/issues"
   },
+  "engines": {
+    "node": "v16.x",
+    "npm": "8.19.3"
+  },
   "homepage": "https://github.com/FiaAddow/JS2-CA#readme"
 }
