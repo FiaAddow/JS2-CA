@@ -1,22 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/dist/css/styles.css" />
+    <script
+      src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"
+      defer
+    ></script>
+    <script src="/src/js/Handlers/login.mjs" type="module" defer></script>
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="/dist/css/styles.css">
-  <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js" defer></script>
-  <script src="/src/js/Handlers/login.mjs" type="module" defer></script>
+    <title>login-page</title>
+  </head>
 
-  <title>login-page</title>
-</head>
-
-<body>
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="container">
-      <button class="navbar-toggler" type="button" data-mdb-toggle="collapse" data-mdb-target="#navbarButtonsExample"
-        aria-controls="navbarButtonsExample" aria-expanded="false" aria-label="Toggle navigation">
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-mdb-toggle="collapse"
+        data-mdb-target="#navbarButtonsExample"
+        aria-controls="navbarButtonsExample"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
         <i class="fas fa-bars"></i>
       </button>
 
@@ -24,7 +32,13 @@
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
             <a href="/Profile/index-page.html">
-              <img class="mb-4" src="/images/2.png" alt="login-page" width="100" height="100">
+              <img
+                class="mb-4"
+                src="/images/Fashion boutique.png"
+                alt="login-page"
+                width="100"
+                height="100"
+              />
             </a>
           </li>
         </ul>
@@ -34,58 +48,106 @@
             <button type="button" class="w-40 btn btn-btn">Login</button>
           </a>
           <a href="/Profile/register.html">
-            <button type="button" class="w-40 btn btn-outline-dark btn-rounded" data-mdb-ripple-color="dark">Sign up for
-              free</button>
+            <button
+              type="button"
+              class="w-40 btn btn-outline-dark btn-rounded"
+              data-mdb-ripple-color="dark"
+            >
+              Sign up for free
+            </button>
           </a>
         </div>
       </div>
     </div>
   </nav>
-  <main>
-    <div class="text-center">
-      <form id="loginForm">
-        <a href="/Profile/index-page.html">
-          <img class="mb-4" src="/images/2.png" alt="signin-page" width="100" height="100">
-        </a>
-        <h1 class="h3 mb-3 fw-normal">Please sign in</h1>
-        <div class="form-group mb-4">
-          <label for="emailInput">Email address</label>
-          <input type="email" class="form-control" id="emailInput" name="email" aria-describedby="emailHelp"
-            placeholder="@stud.noroff.no" value="amin@stud.noroff.no">
-          <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+  <!-- Section: Design Block -->
+  <section class="text-center text-lg-start">
+    <style>
+      .cascading-right {
+        margin-right: -50px;
+      }
+
+      @media (max-width: 991.98px) {
+        .cascading-right {
+          margin-right: 0;
+        }
+      }
+    </style>
+
+    <!-- Jumbotron -->
+    <div class="container py-4">
+      <div class="row g-0 align-items-center">
+        <div class="col-lg-6 mb-5 mb-lg-0">
+          <div
+            class="card cascading-right"
+            style="
+              background: hsla(0, 0%, 100%, 0.55);
+              backdrop-filter: blur(30px);
+            "
+          >
+            <div class="card-body p-5 shadow-5 text-center">
+              <h2 class="fw-bold mb-5">Sign up now</h2>
+              <form id="loginForm">
+                <div class="form-group mb-4">
+                  <label for="emailInput">Email address</label>
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="emailInput"
+                    name="email"
+                    aria-describedby="emailHelp"
+                    placeholder="@stud.noroff.no"
+                    value="amin@stud.noroff.no"
+                  />
+                  <small id="emailHelp" class="form-text text-muted"
+                    >We'll never share your email with anyone else.</small
+                  >
+                </div>
+
+                <div class="form-group mb-4">
+                  <input
+                    type="password"
+                    name="password"
+                    class="form-control"
+                    required
+                    minlength="8"
+                    placeholder="********"
+                    value="adminadmin"
+                  />
+                  <label for="">Password</label>
+                </div>
+
+                <button
+                  class="w-40 btn btn-lg btn-dark bg-gradient"
+                  type="submit"
+                >
+                  Sign in
+                </button>
+                <a href="/Profile/register.html">
+                  <button
+                    type="button"
+                    class="w-40 btn btn-outline-dark btn-rounded"
+                    data-mdb-ripple-color="dark"
+                  >
+                    Register
+                  </button>
+                </a>
+                <p class="mt-5 mb-3 text-muted">©2023</p>
+              </form>
+            </div>
+          </div>
         </div>
-        <div class="form-group mb-4">
-          <input type="password" name="password" class="form-control" required minLength="8" placeholder="********" value="adminadmin">
-          <label for="">Password</label>
+
+        <div class="col-lg-6 mb-5 mb-lg-0">
+          <img
+            src="/images/White Wedding Sale Instagram Post.png"
+            class="w-100 rounded-4 shadow-4"
+            alt=""
+          />
         </div>
-        <div class="checkbox mb-3">
-          <label>
-            <input type="checkbox" value="remember-me"> Remember me
-          </label>
-        </div>
-        <button class="w-40 btn btn-lg btn-dark bg-gradient" type="submit">Sign in</button>
-        <a href="/Profile/register.html">
-          <button type="button" class="w-40 btn btn-outline-dark btn-rounded"
-            data-mdb-ripple-color="dark">Register</button>
-        </a>
-        <p class="mt-5 mb-3 text-muted">©2023</p>
+      </div>
     </div>
-    </div>
-    </form>
-  </main>
-
-
-
-
-  <footer class="py-3 my-4">
-    <ul class="nav justify-content-center border-bottom pb-3 mb-3">
-      <li class="nav-item"><a href="/profile/login.html" class="nav-link px-2 text-muted">Home</a></li>
-      <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Features</a></li>
-      <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Pricing</a></li>
-      <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">FAQs</a></li>
-      <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">About</a></li>
-    </ul>
-  </footer>
-</body>
-
+    <!-- Jumbotron -->
+  </section>
+  <!-- Section: Design Block -->
 </html>
