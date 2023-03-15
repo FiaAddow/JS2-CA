@@ -1,0 +1,194 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/dist/css/styles.css" />
+    <script
+      src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"
+      defer
+    ></script>
+    <script src="/src/js/index.mjs" defer type="module"></script>
+
+    <title>post</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-mdb-toggle="collapse"
+          data-mdb-target="#navbarButtonsExample"
+          aria-controls="navbarButtonsExample"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <i class="fas fa-bars"></i>
+        </button>
+
+        <div class="collapse navbar-collapse">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a href="/profile/index-page.html">
+                <img
+                  class="mb-4"
+                  src="/images/Fashion boutique.png"
+                  alt="Register-page"
+                  width="100"
+                  height="100"
+                />
+              </a>
+            </li>
+          </ul>
+          <a href="/profile/login.html">
+            <button
+              type="button"
+              class="w-40 btn btn-outline-dark btn-rounded"
+              data-mdb-ripple-color="dark"
+            >
+              Sign out
+            </button>
+          </a>
+        </div>
+      </div>
+    </nav>
+    <section class="h-100 gradient-custom-2">
+      <div class="container py-5 h-100">
+        <div class="row d-flex justify-content-center align-items-center h-100">
+          <div class="col col-lg-9 col-xl-7">
+            <div class="card">
+              <div
+                class="rounded-top text-white d-flex flex-row"
+                style="background-color: #000; height: 200px"
+              >
+                <div class="ms-4 mt-5 d-flex flex-column" style="width: 150px">
+                  <img
+                    src="/images/gift-habeshaw-FgN7IJCAYvc-unsplash.jpg"
+                    alt="Generic placeholder image"
+                    class="img-fluid img-thumbnail mt-4 mb-2"
+                    style="width: 150px; z-index: 1"
+                  />
+                  <button
+                    type="button"
+                    class="btn btn-outline-dark"
+                    data-mdb-ripple-color="dark"
+                    style="z-index: 1"
+                  >
+                    Edit profile
+                  </button>
+                </div>
+                <div class="ms-3" style="margin-top: 130px">
+                  <h5>Mona Horwitz</h5>
+                  <p>Norway</p>
+                </div>
+              </div>
+              <div class="p-4 text-black" style="background-color: #f8f9fa">
+                <div class="d-flex justify-content-end text-center py-1">
+                  <div>
+                    <p class="mb-1 h5">---</p>
+                    <p class="small text-muted mb-0">Photos</p>
+                  </div>
+                  <div class="px-3">
+                    <p class="mb-1 h5">---</p>
+                    <p class="small text-muted mb-0">Followers</p>
+                  </div>
+                  <div>
+                    <p class="mb-1 h5">---</p>
+                    <p class="small text-muted mb-0">Following</p>
+                  </div>
+                </div>
+              </div>
+              <div class="card-body p-4 text-black">
+                <div class="mb-5">
+                  <p class="lead fw-normal mb-1">About</p>
+                  <div class="p-4" style="background-color: #f8f9fa">
+                    <p class="font-italic mb-1">Wedding</p>
+                    <p class="font-italic mb-1">Lives in New York</p>
+                    <p class="font-italic mb-0">Photographer</p>
+                  </div>
+                </div>
+                <div
+                  class="d-flex justify-content-between align-items-center mb-4"
+                >
+                  <p class="lead fw-normal mb-0">My Recent Posts</p>
+                  <p class="mb-0">
+                    <a href="/post/create/index.html" class="text-muted"
+                      >create new post</a
+                    >
+                  </p>
+                </div>
+                <div class="row g-2">
+                  <div class="col mb-2">
+                    <img
+                      src="/images/marissa-grootes--837JygbCJo-unsplash.jpg"
+                      alt="image 1"
+                      class="w-100 rounded-3"
+                    />
+                  </div>
+                  <div class="col mb-2">
+                    <img
+                      src="/images/guanfranco-g-82p7JgzKOpo-unsplash.jpg"
+                      alt="image 1"
+                      class="w-100 rounded-3"
+                    />
+                  </div>
+                </div>
+                <div class="row g-2">
+                  <div class="col">
+                    <img
+                      src="/images/marissa-grootes-hXyuC9X3JK4-unsplash.jpg"
+                      alt="image 1"
+                      class="w-100 rounded-3"
+                    />
+                  </div>
+                  <div class="col">
+                    <img
+                      src="/images/pexels-dids-1499511.jpg"
+                      alt="image 1"
+                      class="w-100 rounded-3"
+                    />
+                  </div>
+
+                  <div class="search-bar">
+                    <input
+                      class="form-control rounded"
+                      type="text"
+                      id="search-input"
+                      placeholder="Search posts..."
+                      aria-describedby="search-addon"
+                      aria-label="Search"
+                    />
+                    <button
+                      ype="button"
+                      class="btn btn-outline-dark"
+                      id="search-button"
+                    >
+                      Search
+                    </button>
+                  </div>
+
+                  <div
+                    class="d-flex justify-content-between align-items-center mb-4"
+                  >
+                    <p class="lead fw-normal mb-0">Recent Posts</p>
+                    <p class="mb-0">
+                      <a href="/post" class="text-muted">Delete Posts</a>
+                    </p>
+                  </div>
+                  <div class="row g-2" id="post">
+                    <div id="post"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
+
+<div class="col mb-2" id="post">
+  <div id="post"></div>
+</div>
