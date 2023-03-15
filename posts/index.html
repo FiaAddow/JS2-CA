@@ -12,6 +12,7 @@
     <script src="/src/js/handlers/deletePost.mjs" type="module" defer></script>
     <title>Posts</title>
   </head>
+
   <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
       <div class="container">
@@ -33,7 +34,7 @@
               <a href="/Profile/index-page.html">
                 <img
                   class="mb-4"
-                  src="/images/2.png"
+                  src="/images/Fashion boutique.png"
                   alt="Register-page"
                   width="100"
                   height="100"
@@ -58,14 +59,98 @@
         </div>
       </div>
     </nav>
-    <main class="flex-grow-1 bg-light text-dark">
-      <div class="container-fluid">
-        <div class="row justify-content-center">
-          <div class="col-12 col-md-6" id="post">
-            <!--post pagr-->
-          </div>
-        </div>
-      </div>
-    </main>
-  </body>
-</html>
+    <h1> Editors Corner</h1>
+    <div class="d-flex align-items-center">
+      <main class="flex-grow-1 bg-light text-dark">
+        <div class="col-12 col-md-9 col-lg-7 col-xl-6">
+                <div class="card" style="border-radius: 15px">
+                  <div class="card-body p-5">
+                    <h2 class="text-uppercase text-center mb-5"> Search post</h2>
+                    <form id="createPostForm">
+                      <div class="search-bar">
+                        <input
+                          class="form-control rounded"
+                          type="text"
+                          id="search-input"
+                          placeholder="Search posts..."
+                          aria-describedby="search-addon"
+                          aria-label="Search"
+                        />
+                        <button
+                          ype="button"
+                          class="btn btn-outline-dark"
+                          id="search-button"
+                        >
+                          Search
+                        </button>
+                      </div>
+
+                      <div class="row flex-md-row flex-column">
+                        <div class="col-md-6">
+                          <div class="card" style="border-radius: 15px">
+                            <div class="card-body p-5">
+                              <h2 class="text-uppercase text-center mb-5">Create post</h2>
+                              <form id="createPostForm">
+                                <div class="form-group mb-4">
+                                  <label class="" for="title">Title</label>
+                                  <input
+                                    type="text"
+                                    name="title"
+                                    class="form-control"
+                                    required
+                                  />
+                                </div>
+                      
+                                <div class="form-group">
+                                  <label for="content">Content</label>
+                                  <textarea
+                                    type="text"
+                                    class="form-control"
+                                    id="body"
+                                    name="body"
+                                  >
+                                  </textarea>
+                                  <div class="form-group mb-4">
+                                    <!-- <label class="" for="tags">tags</label>
+                                    <input
+                                      type="text"
+                                      name="tags"
+                                      class="form-control"
+                                    /> -->
+                                    <div class="form-group mb-4">
+                                      <label class="" for="Media">Media</label>
+                                      <input
+                                        type="url"
+                                        name="Media"
+                                        class="form-control"
+                                      />
+                                    </div>
+                                  </div>
+                                  <button
+                                    type="submit"
+                                    class="w-40 btn btn-outline-dark btn-rounded"
+                                    data-mdb-ripple-color="dark"
+                                  >
+                                    Create post
+                                  </button>
+                                  <div class="d-flex align-items-center">
+                                    <a href="/Profile/homepage.html">
+                                      <button type="button" class="w-40 btn btn-btn">or back to profile page</button>
+                                    </a>
+                                  </div>
+                                </form>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-6">
+                          <div class="card" style="border-radius: 15px">
+                            <div class="card-body p-5">
+                              <h2 class="text-uppercase text-center mb-5"> Delete Post</h2>
+                              <div id="post">
+                                <!-- post content here -->
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>

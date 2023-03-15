@@ -23,3 +23,9 @@ export async function getPost(id) {
 
   return await response.json();
 }
+
+const searchResults = document.querySelector(".search-results");
+
+async function getData() {
+  const response = await fetch();
+}
