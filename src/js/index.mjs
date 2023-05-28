@@ -37,3 +37,7 @@ function redirect() {
 }
 
 testTemplate();
+
+var profile = JSON.parse(localStorage.getItem("profile"))
+document.getElementById("fullName").innerHTML = profile.name
+console.log(profile.name);
